@@ -9,8 +9,32 @@
 
 <body>
     <h1>CI / CD </h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas officia eligendi corrupti maiores ab
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas officia eligendi corrupti
+        maiores ab
         eos a pariatur excepturi corporis.</p>
+    <button id="button" onclick="darkmode()">Dark mode</button>
 </body>
+
+<script>
+    let darkModeState = false;
+
+    function darkmode() {
+        darkModeState = !darkModeState;
+
+        const body = document.body;
+        const para = document.querySelector('p');
+
+        if (darkModeState) {
+            body.style.backgroundColor = "black";
+            para.style.backgroundColor = "white";
+            para.style.color = "black";
+        } else {
+            body.style.backgroundColor = "white";
+            para.style.backgroundColor = "black";
+            para.style.color = "white";
+        }
+    }
+
+</script>
 
 </html>
