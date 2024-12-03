@@ -8,8 +8,8 @@
 </head>
 
 <body>
-    <h1 id="para">CI / CD </h1>
-    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas officia eligendi corrupti
+    <h1 class="para">CI / CD </h1>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas officia eligendi corrupti
         maiores ab
         eos a pariatur excepturi corporis.</p>
     <button id="button" onclick="darkmode()">Dark mode</button>
@@ -22,7 +22,7 @@
         darkModeState = !darkModeState;
 
         const body = document.body;
-        const para = document.querySelector('p');
+        const para = document.querySelector('.para');
 
         if (darkModeState) {
             body.style.backgroundColor = "black";
