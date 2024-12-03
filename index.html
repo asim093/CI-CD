@@ -22,19 +22,22 @@
         darkModeState = !darkModeState;
 
         const body = document.body;
-        const para = document.querySelectorAll('.para');
+        const paras = document.querySelectorAll('.para'); // Get all elements with class 'para'
 
         if (darkModeState) {
             body.style.backgroundColor = "black";
-            para.style.backgroundColor = "white";
-            para.style.color = "black";
+            paras.forEach(para => {
+                para.style.backgroundColor = "white";
+                para.style.color = "black";
+            });
         } else {
             body.style.backgroundColor = "white";
-            para.style.backgroundColor = "black";
-            para.style.color = "white";
+            paras.forEach(para => {
+                para.style.backgroundColor = "black";
+                para.style.color = "white";
+            });
         }
     }
-
 </script>
 
 </html>
