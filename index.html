@@ -22,7 +22,7 @@
         darkModeState = !darkModeState;
 
         const body = document.body;
-        const para = document.getElementsByClassName('para');
+        const para = document.querySelectorAll('para');
 
         if (darkModeState) {
             body.style.backgroundColor = "black";
